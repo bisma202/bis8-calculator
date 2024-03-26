@@ -1,18 +1,18 @@
 {
-  "name": "bis8-calculator",
-  "version": "1.0.1",
-  "description": "a b calculator with typescript, node.js and inqurier",
+  "name": "bismeo55-number-guessing",
+  "version": "1.0.4",
+  "description": "this is a cli based numbers guessing game ",
   "main": "index.js",
   "type": "module",
+  "publishconfig":{
+    "access": "public"
+  },
   "bin": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" & exit 1"
   },
-  "author": " me",
-  "license": "MIT",
-  "dependencies": {
-    "inquirer": "^9.2.16"
-  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "@types/inquirer": "^9.0.7"
   }

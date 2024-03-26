@@ -1,27 +1,31 @@
-import inquirer from "inquirer";
-import { toASCII } from "punycode";
-const answer = await inquirer.prompt([
-    { message: "enter first number", type: "number", name: "firstNumber" },
-    { message: "enter second number", type: "number", name: "secondNumber" },
+#! /usr/bin/env node
+
+import inquirer from "inquirer"
+
+// 1) computer will generate a random number-done
+
+// 2) user input for guessing number
+
+// 3) compare user input with computer generater number and show result
+
+const randomNumber = Math.floor(Math.random()* 6 + 1);
+
+const answers = await inquirer.prompt([
     {
-        message: "select one of the operators to perform opperation",
-        type: "list",
-        name: "operator",
-        choices: ["addition", "subtraction", "multiplication", "division"],
+        name: "userGuessedNumber",
+        type: "number",
+        message: "please guess a number between 1-10: ",
     },
 ]);
-// conditional statement
-if (answer.operator === "addition") {
-    console.log(answer.firstNumber + answer.secondNumber);
-}
-else if (answer.operator === "subtraction") {
-    console.log(answer.firstNumber - answer.secondNumber);
-}
-else if (answer.operator === "multiplication") {
-    console.log(answer.firstNumber * answer.secondNumber);
-}
-else if (answer.operator === "division") {
-    console.log(answer.firstNumber / answer.secondNumber);
-}else {
-    console.log("please select valid operator")
-}
+
+if(answers.userGuessedNumber === randomNumber ){
+    console.log("congtratulation! you guessed right number.")
+}else {console.log("you guessed wrong number")}
+
+
+
+
+
+
+    
+        
