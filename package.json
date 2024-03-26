@@ -1,6 +1,6 @@
 {
   "name": "bis8-calculator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a b calculator with typescript, node.js and inqurier",
   "main": "index.js",
   "type": "module",
